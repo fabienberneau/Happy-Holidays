@@ -1,0 +1,154 @@
+/* global style */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Muli', sans-serif;
+}
+h1{
+    font-size: 26px;
+    font-family: 'Pacifico', cursive;
+}
+
+h2{
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+h3{
+    font-size: 30px;
+}
+
+h4,h5{
+    font-size: 28px;
+}
+
+li,
+button,
+label,
+input,
+p{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(35, 36, 109);
+}
+
+button{
+    padding: 20px 60px;
+    background: rgb(35, 36, 109);
+    border: none;
+    color: white;
+
+}
+
+/* navbar */
+
+
+.main-head{
+    background-color: white;
+    color: rgb(35, 36, 109);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    flex: 1 1 500px;
+    justify-content: space-around;
+
+
+}
+
+#logo{
+
+    color: tomato;
+    flex: 1 1 500px;
+}
+
+#logo span{
+
+    color: rgb(35, 36, 109);
+    font-size: 25px;
+}
+
+.hero{
+    background: linear-gradient(rgba(44, 211, 207, 0.8), rgba(241, 203, 34, 0.5)), url('./images/icônes/kong-jun-HS5lkSGvKIQ-unsplash.jpg');
+    min-height: 90vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(35, 36, 109);
+}
+
+.hero h2{
+    font-size: 80px;
+}
+
+.hero h3{
+    padding: 30px;
+}
+
+.hero button{
+    background: tomato;
+}
+
+.hero button:hover{
+    background: rgb(253, 132, 111)
+}
+
+@media screen and  (max-width:1112px){
+    nav{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    #logo{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .hero h2{
+        font-size: 40px;
+        padding: 0, 10px;
+       }
+    .hero h3{
+        font-size: 25px;
+    }
+    .hero button {
+        padding: 10px, 20px;
+        font-size: 20px; 
+    }
+}
+@media screen and  (max-width:530px){
+    nav li{
+        font-size: 16px;
+    }
+    .hero h2{
+        font-size: 25px;
+    }
+    .hero h3{
+        font-size: 20px;
+    }
+}
+
